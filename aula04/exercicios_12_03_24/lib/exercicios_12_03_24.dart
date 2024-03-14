@@ -44,6 +44,10 @@ class Aluno {
 
 // 03
 lerInputPrintResultado() {
+
+  retornarMenor(n1, n2) {
+    return (n2 < n1) ? n2.toString() : ((n1 == n2) ? "iguais" : n1.toString());
+  }
   int n1, n2;
 
   print("Digite um numero: ");
@@ -53,6 +57,16 @@ lerInputPrintResultado() {
 
   print("o menor dos numeros digitado e: " + retornarMenor(n1, n2));
 }
-retornarMenor(n1, n2) {
-  return (n2 < n1) ? n2.toString() : ((n1 == n2) ? "iguais" : n1.toString());
+
+// 04
+verificarSenha() {
+  print("\n\ndigite sua senha: ");
+  String senha = stdin.readLineSync().toString().trim();
+  return (senha == "ASDFG") ? print("\n\nACESSO PERMITIDO\n\n") : print("\n\nACESSO NEGADO\n\n");
+}
+
+// 05
+dadosPessoa(String nome, String sexo, int idade) {
+  String statusIdade = (idade >= 21) ? "MAIOR DE IDADE" : "MENOR DE IDADE";
+  print("\n\nCADASTRO DE PESSOA\n nome:   $nome\n sexo:   $sexo\n idade:  $idade ($statusIdade)");
 }
