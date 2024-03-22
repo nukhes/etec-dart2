@@ -81,7 +81,7 @@ lerInputPrintResultado() {
   print("Digite um outro numero: ");
   n2 = int.parse(stdin.readLineSync().toString());
 
-  print("o menor dos numeros digitado e: " + retornarMenor(n1, n2));
+  print("o menor dos numeros digitado e: ${retornarMenor(n1, n2)}");
 }
 
 // 04
@@ -128,7 +128,7 @@ Funcionario() {
   }
 }
 
-// 08
+// 09
 FuncionarioReajuste() {
   print("\ndigite o salario de um funcionario: ");
   double salario = double.parse(stdin.readLineSync().toString());

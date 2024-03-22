@@ -1,4 +1,4 @@
-import '../lib/exercicios_12_03_24.dart';
+import 'package:exercicios_12_03_24/exercicios_12_03_24.dart';
 
 void main() {
   print("EXERCICIOS EM DART");
