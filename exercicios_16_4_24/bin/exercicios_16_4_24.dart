@@ -43,7 +43,38 @@ void exercicio05() {
   }
 }
 
+void exercicio06() {
+  pegarMedia() {
+    var conceito;
+    var mediaFinal;
+    var n = [0.0,0.0,0.0,0.0];
+
+    for (var i = 0; i < 3; i++) {
+      print("Digite a nota: ");
+      n[i] = double.parse(stdin.readLineSync().toString().toUpperCase().trim());
+    }
+    print("Digite a nota do exercicio: ");
+    n[3] = double.parse(stdin.readLineSync().toString().toUpperCase().trim());
+
+    mediaFinal = (n[0] + (n[1]*2) + (n[2]*3) + n[3])/7;
+
+    if (mediaFinal >= 9) {
+      conceito = 'A';
+    } else if (mediaFinal < 9 || mediaFinal >= 7.5) {
+      conceito = 'B';
+    } else if (mediaFinal < 7.5 || mediaFinal >= 6) {
+      conceito = 'C';
+    } else {
+      conceito = 'D';
+    }
+
+    print("A nota final é: [$conceito]");
+  }
+  pegarMedia();
+}
+
 void main(List<String> arguments) {
-  exercicio04();
-  exercicio05();
+  //exercicio04();
+  //exercicio05();
+  exercicio06();
 }
