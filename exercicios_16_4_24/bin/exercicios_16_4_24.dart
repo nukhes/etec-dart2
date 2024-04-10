@@ -74,7 +74,7 @@ void exercicio06() {
 }
 
 void main(List<String> arguments) {
-  //exercicio04();
-  //exercicio05();
+  exercicio04();
+  exercicio05();
   exercicio06();
 }

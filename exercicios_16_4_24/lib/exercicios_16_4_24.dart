@@ -1,4 +1,3 @@
-import 'dart:io';
 
 // EXERCICIO 04
 aplicarDesconto(num valorProduto, num codigo) {
