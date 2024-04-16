@@ -45,8 +45,8 @@ void exercicio05() {
 
 void exercicio06() {
   pegarMedia() {
-    var conceito;
-    var mediaFinal;
+    String conceito;
+    double mediaFinal;
     var n = [0.0,0.0,0.0,0.0];
 
     for (var i = 0; i < 3; i++) {
